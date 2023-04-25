@@ -1,4 +1,10 @@
-from shiny import App, render, ui
+# Shiny in Python at alpha stage
+#from shiny import App, render, ui
+# post-alpha stage
+from shiny import *
+
+# Set up requirement.txt file - Pandas (?only work if changing polars df into pandas df), Plotly
+#import plotly.express as px
 
 # User interface
 # Add inputs and outputs
