@@ -6,10 +6,13 @@ from shinywidgets import output_widget, render_widget
 # Import plotly express
 import plotly.express as px
 # Set up requirement.txt file - Pandas & Plotly
+import pandas as pd
 
 
 # ***Specify data source***
-# Likely need to convert Polars df into Pandas df
+# Likely need to convert Polars df into Pandas df - as per Shiny for Python docs
+df = pd.read_csv("pc_cov_pd.csv")
+
 
 # User interface
 # Add inputs and outputs
@@ -36,7 +39,7 @@ def server(input, output, session):
     @render_widget
     def my_widget():
         fig = px.scatter(
-            df_name, MP1 = input.MP1(), MP2 = input.MP2(), 
+            df, MP1 = input.MP1(), MP2 = input.MP2(), 
             #marginal = "rug"
         )
         fig.layout.height = 280
