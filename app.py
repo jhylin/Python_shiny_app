@@ -11,29 +11,28 @@ import pandas as pd
 
 # ***Specify data source***
 # Likely need to convert Polars df into Pandas df - as per Shiny for Python docs
+# Trial Pandas version first
 df = pd.read_csv("pc_cov_pd.csv")
 
 
-# User interface
-# Add inputs and outputs
-
-# Inputs & outputs
+# User interface---
+# Add inputs & outputs
 app_ui = ui.page_fluid(
     ui.div(
         ui.input_select(
             "MP1", label = "Select property 1:", 
-            choices=["Partition coefficents", "Complexitys"]
+            choices=["Partition coefficients": "Partition_coef", "Molecule complexity": "Complexity"]
         ),
         ui.input_select(
             "MP2", label = "Select property 2:",
-            choices=["Molecular weights", "Polar surface areas"]
+            choices=["Molecular weights": "Molecular_weight", "Polar surface areas": "Polar_surface_area"]
         )
     ),
     output_widget("my_widget")    
 )
 
-# Server
-# Add in plot function within the server function
+# Server---
+# Add plotting code within my_widget function within the server function
 def server(input, output, session):
     @output
     @render_widget
