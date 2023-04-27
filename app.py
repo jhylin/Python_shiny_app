@@ -18,18 +18,18 @@ df = pd.read_csv("pc_cov_pd.csv")
 # User interface---
 # Add inputs & outputs
 app_ui = ui.page_fluid(
-    ui.div(
-        ui.input_select(
-            "MP1", label = "Select property 1:", 
-            choices=["Partition coefficients": "Partition_coef", "Molecule complexity": "Complexity"]
-        ),
-        ui.input_select(
-            "MP2", label = "Select property 2:",
-            choices=["Molecular weights": "Molecular_weight", "Polar surface areas": "Polar_surface_area"]
-        )
-    ),
-    output_widget("my_widget")    
-)
+        ui.div(
+            ui.input_select(
+                "MP1", label = "Select property 1:", 
+                choices=["Partition_coef", "Complexity"]
+                ),
+            ui.input_select(
+                "MP2", label = "Select property 2:",
+                choices=["Molecular_weight", "Polar_surface_area"]
+                )
+            ),
+        output_widget("my_widget")    
+    )
 
 # Server---
 # Add plotting code within my_widget function within the server function
