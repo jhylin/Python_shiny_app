@@ -20,11 +20,13 @@ df = pd.read_csv("pc_cov_pd.csv")
 app_ui = ui.page_fluid(
         ui.div(
             ui.input_select(
-                "MP1", label = "Select property 1:", 
+                # Change MP1
+                "x", label = "Select property 1:", 
                 choices=["Partition_coef", "Complexity"]
                 ),
             ui.input_select(
-                "MP2", label = "Select property 2:",
+                # Change MP2
+                "y", label = "Select property 2:",
                 choices=["Molecular_weight", "Polar_surface_area"]
                 )
             ),
@@ -38,7 +40,7 @@ def server(input, output, session):
     @render_widget
     def my_widget():
         fig = px.scatter(
-            df, MP1 = input.MP1(), MP2 = input.MP2(), 
+            df, x = input.x(), y = input.y(), 
             #marginal = "rug"
         )
         fig.layout.height = 280
