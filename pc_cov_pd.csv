@@ -1,4 +1,4 @@
-,Compound_name,Molecular_weight,Polar_surface_area,Complexity,Partition_coef,Heavy_atom_count,H_bond_donor_count,H_bond_acceptor_count,Rotatable_bond_count,Exact_mass,Monoisotopic_mass,Formal_charge,Cov-bonded_unit_count,Isotope_atom_count,Total_atom_stereo_count,Defined_atom_stereo_count,Undefined_atoms_stereo_count,Total_bond_stereo_count,Defined_bond_stereo_count,Undefined_bond_stereo_count,Part_coef_group
+,Compound name,Molecular weight,Polar surface area,Complexity,Partition coefficients,Heavy atom count,Hydrogen bond donor count,Hydrogen bond acceptor count,Rotatable bond count,Exact mass,Monoisotopic mass,Formal charge,Covalently-bonded unit count,Isotope atom count,Total atom stereocenter count,Defined atom stereocenter count,Undefined atoms stereocenter count,Total bond stereocenter count,Defined bond stereocenter count,Undefined bond stereocenter count,Part_coef_group
 0,Calcitriol,416.6,60.7,688.0,5.1,30,3,3,6,416.329,416.329,0,1,0,6,6,0,2,2,0,Larger than 6
 1,Ubiquinol,865.4,58.9,1600.0,20.2,63,2,4,31,864.7,864.7,0,1,0,0,0,0,9,9,0,Larger than 6
 2,Glutamine,146.14,106.0,146.0,-3.1,10,3,4,4,146.069,146.069,0,1,0,1,1,0,0,0,0,Between -11 and 5
