@@ -82,7 +82,7 @@ app_ui = ui.page_fluid(
         ui.row(
             ui.p(
                 """
-                Data on compounds used in COVID-19 clinical trials curated by PubChem - data access: https://pubchem.ncbi.nlm.nih.gov/#tab=compound&query=covid-19%20clinicaltrials.""" 
+                Data curated by PubChem, accessed from: https://pubchem.ncbi.nlm.nih.gov/#tab=compound&query=covid-19%20clinicaltrials (last access date: 30th Apr 2023)""" 
             )         
         ) 
     )
