@@ -1,3 +1,3 @@
 # Python_shiny_app
 
-This is the initial repository for a Shiny app in Python, which will be worked on over the next few weeks. Data selection is currently underway - likely from PubChem this time.
+This repository currently holds one Shiny app in Python on PubChem data. Currently this app is only deployed and shared from the shinylive editer. A blog post will follow soon explaining the brief process of building this shiny app in Python and where to access it.
