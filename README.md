@@ -1,3 +1,7 @@
 # Python_shiny_app
 
-This repository currently holds one Shiny app in Python on PubChem data. Currently this app is only deployed and shared from the shinylive editer. A blog post will follow soon explaining the brief process of building this shiny app in Python and where to access it.
+Two versions of the Shinylive app embedded within Quarto documents are available:
+
+1. [Older method which imports csv file via manual input](https://jhylin.github.io/Data_in_life_blog/posts/13_Shiny_app_python/ShinyAppPy_PC_Cov19_app_embed.html) - works best for small to medium-size files with longer code
+
+2. [Using pyodide.http.open_url() method to import csv file](https://jhylin.github.io/Data_in_life_blog/posts/13_Shiny_app_python/ShinyAppPy_PC_Cov19_app_embed_pyodide_http.html) - likely not restricted by file size and cleaner code version
